@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/garden/garden-vendor.mk)
+$(call inherit-product, vendor/samsung/m11q/m11q-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
