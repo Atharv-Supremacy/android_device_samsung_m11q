@@ -55,26 +55,11 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    audio.bluetooth.default \
-    audio.r_submix.default \
-    android.hardware.audio.service
-
-# Bluetooth
-PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
 
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -107,10 +92,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
-
-# Prebuilt
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilts/dtb.img:dtb.img
 
 # Rootdir
 PRODUCT_PACKAGES += \
